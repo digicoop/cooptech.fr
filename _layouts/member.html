@@ -6,18 +6,20 @@ nav_menu: directory
   {% if page.logo %}<img src="{{page.logo}}" alt="Logo">{% else %}<h1>{{page.title}}</h1>{% endif %}
 </div>
 <section>
-  <div class="section-header">
-    {% if page.description %}<h2>{{page.description}}</h2>{% endif %}
-    <p>
-      <a href="{{page.website}}" target="_blank">{{page.website}}</a>
-      {% if page.email %} | <a href="mailto:{{page.email}}">{{page.email}}</a>{% endif %}
-      {% if page.phone %} | {{page.phone}}{% endif %}
-      {% if page.address %} | {{page.address}}{% endif %}
-    </p>
+  <div class="container">
+    <div class="section-header">
+      {% if page.description %}<h2>{{page.description}}</h2>{% endif %}
+      <p>
+        <a href="{{page.website}}" target="_blank">{{page.website}}</a>
+        {% if page.email %} | <a href="mailto:{{page.email}}">{{page.email}}</a>{% endif %}
+        {% if page.phone %} | {{page.phone}}{% endif %}
+        {% if page.address %} | {{page.address}}{% endif %}
+      </p>
+    </div>
+    {% if page.video %}
+      <iframe src="{{page.video}}" frameborder="0" allowfullscreen="" class="video-iframe"></iframe>
+    {% endif %}
   </div>
-  {% if page.video %}
-    <iframe src="{{page.video}}" frameborder="0" allowfullscreen="" class="video-iframe"></iframe>
-  {% endif %}
 </section>
 <section>
   <div class="container">

@@ -48,7 +48,7 @@ nav_menu: directory
       "body": {{member.content|strip_html|jsonify}},
       "description": {{member.description|strip_html|jsonify}},
       "keywords": {% if member.keywords %}{{member.keywords|jsonify}}{% else %}[]{% endif %}.join(", "),
-      "id": {{member.url|jsonify}}
+      "id": {{member.url|prepend:site.baseurl|jsonify}}
     },
     {%- endfor %}
   ];
