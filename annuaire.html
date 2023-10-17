@@ -8,7 +8,7 @@ nav_menu: directory
   <p>
     Travailler avec une coopérative c'est directement être en contact avec les co-propriétaires de l'entreprise. Cela vous garantie une équipe réactive qui s'assurera de la réussite de votre projet.
   </p>
-  <form action="/annuaire" onsubmit="event.preventDefault(); onSearch()">
+  <form action="{{site.baseurl}}/annuaire" onsubmit="event.preventDefault(); onSearch()">
     <div class="input">
       <input type="text" name="q" placeholder="Rechercher une société, un service, un produit, etc..." id="searchbox">
     </div>
@@ -35,11 +35,11 @@ nav_menu: directory
 <section>
   <div class="container">
     <p>
-      Notre base de membre est aussi <a href="/members.json">disponible en JSON</a>.
+      Notre base de membre est aussi <a href="{{site.baseurl}}/members.json">disponible en JSON</a>.
     </p>
   </div>
 </section>
-<script src="/assets/js/lunr.js"></script>
+<script src="{{site.baseurl}}/assets/js/lunr.js"></script>
 <script>
   const documents = [
     {% for member in site.members -%}
