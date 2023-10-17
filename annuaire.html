@@ -17,7 +17,7 @@ nav_menu: directory
 </div>
 <div id="members" class="container cards">
   {% for member in site.members %}
-  <a href="{{member.url}}">
+  <a href="{{member.url|prepend:site.baseurl}}">
     {% if member.thumbnail %}
     <div class="image" style="background-image: url({{member.thumbnail}})"></div>
     {% elsif member.banner %}

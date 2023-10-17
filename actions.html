@@ -12,7 +12,7 @@ nav_menu: actions
 <div id="blog" class="container cards">
   {% for post in site.posts %}
   <a href="{{post.url|prepend:site.baseurl}}">
-    <div class="image" style="background-image: url({{post.thumbnail}})"></div>
+    <div class="image" style="background-image: url({{post.thumbnail|prepend:site.baseurl}})"></div>
     <div class="title">{{post.title}}</div>
     <p>Publié le {{post.date|date:"%d/%m/%Y"}}</p>
   </a>
