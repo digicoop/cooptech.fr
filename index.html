@@ -1,0 +1,63 @@
+---
+layout: default
+title: Acceuil
+nav_menu: home
+---
+<div id="home-hero" class="hero">
+  <h1>Un <em>nouveau regard</em> sur le monde de la tech</h1>
+  <p>Découvrez les coopératives du numérique: des entreprises innovantes, responsables, aux valeurs fortes et ancrés sur le territoire.</p>
+  <form action="/annuaire">
+    <div class="input">
+      <input type="text" name="q" placeholder="Rechercher une société, un service, un produit, etc...">
+    </div>
+    <button type="submit" class="btn"><i class="bi-search"></i> Rechercher</button>
+  </form>
+</div>
+<div id="home-actions">
+  <p>Les sociétés coopératives du numérique se mobilisent pour développer un écosystème économique vertueux !</p>
+  <ul class="promo-blocks">
+    <li>
+      <span class="icon" style="background-color: #fc4a52;"><i class="bi-megaphone-fill"></i></span>
+      <h3>Promouvoir les coopératives<br>dans la tech</h3>
+      <p>
+        Nous avons tous fait le choix de la coopérative pour les valeurs fortes que ce statut représente.
+        La démocratie peut aussi exister en entreprise ! Il y a beaucoup de similitude avec le mouvement Open Source.
+      </p>
+    </li>
+    <li>
+      <span class="icon" style="background-color: #22a8f4;"><i class="bi-graph-up-arrow"></i></span>
+      <h3>Développer notre activité commerciale</h3>
+      <p>
+        Que ce soit entre nous ou auprès d'autres sociétés, la Cooptech encourage la coopération commerciale.
+        Découvrez l'ensemble des services proposer par nos membres dans l'annuaire.
+      </p>
+    </li>
+    <li>
+      <span class="icon" style="background-color: #12a895;"><i class="bi-rocket-takeoff"></i></span>
+      <h3>Réfléchir aux enjeux tech sous un angle coopératif</h3>
+      <p>
+        Le monde de la tech est à l'origine de nombreux enjeux sociétaux: économie de plateforme, réseaux sociaux, IA, etc...
+        Les coopératives peuvent apporter des réponses éthiques et durable.
+      </p>
+    </li>
+  </ul>
+</div>
+<section class="grey">
+  <div class="container">
+    <div class="section-header"><h2>Une entreprise coopérative, c'est quoi ?</h2></div>
+    <iframe src="https://www.youtube.com/embed/4QhR_wM0MXk" frameborder="0" allowfullscreen="" class="video-iframe"></iframe>
+    <p>
+      <a href="/creer" class="btn">En savoir plus sur la création en coopérative &raquo;</a>
+    </p>
+  </div>
+</section>
+<section class="grey">
+  <div class="container">
+    <div class="section-header"><h2>Découvrez nos membres</h2></div>
+    <ul id="home-members">
+      {% for member in site.members %}
+      <li><a href="{{member.url}}" style="background-image: url({{member.logo}})" title="{{member.title}}"></a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

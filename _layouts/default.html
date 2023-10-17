@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title }} - {{ site.title }}</title>
+    <meta name="description" content="Les sociétés coopératives du numérique se mobilisent pour développer un écosystème économique vertueux ! Venez découvrir leur mouvement ou mieux, les rencontrer !" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="CoopTech" />
+    <meta property="og:description" content="Les sociétés coopératives du numérique se mobilisent pour développer un écosystème économique vertueux ! Venez découvrir leur mouvement ou mieux, les rencontrer !" />
+    <meta property="og:url" content="https://cooptech.fr/" />
+    <meta property="og:site_name" content="CoopTech" />
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  </head>
+  <body>
+    <header>
+      <a href="/"><img src="/assets/img/logo.svg" alt="Cooptech"></a>
+      <nav>
+        <a href="/" class="{% if page.nav_menu == 'home' or layout.nav_menu == 'home' %}active{% endif %}">Accueil</a>
+        <a href="/actions" class="{% if page.nav_menu == 'actions' or layout.nav_menu == 'actions' %}active{% endif %}">Nos actions</a>
+        <a href="/annuaire" class="{% if page.nav_menu == 'directory' or layout.nav_menu == 'directory' %}active{% endif %}">Trouver une coopérative</a>
+        <a href="/communaute" class="{% if page.nav_menu == 'community' or layout.nav_menu == 'community' %}active{% endif %}">Communauté</a>
+        <a href="/creer" class="{% if page.nav_menu == 'create' or layout.nav_menu == 'create' %}active{% endif %}">Entreprendre</a>
+      </nav>
+    </header>
+    {{content}}
+    <footer>
+      <div class="col">
+        <img src="/assets/img/logo.svg" alt="Cooptech">
+      </div>
+      <div class="col">
+        <h4>Restons en contact</h4>
+        <p><i class="bi-envelope"></i> <a href="mailto:contact@cooptech.fr">contact@cooptech.fr</a></p>
+        <p><i class="bi-linkedin"></i> <a href="https://linkedin.com/company/coop-tech-association">LinkedIn</a></p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,99 @@
+---
+layout: default
+title: Annuaire
+nav_menu: directory
+---
+<div class="hero">
+  <h1>Découvrez les coopératives tech</h1>
+  <p>
+    Travailler avec une coopérative c'est directement être en contact avec les co-propriétaires de l'entreprise. Cela vous garantie une équipe réactive qui s'assurera de la réussite de votre projet.
+  </p>
+  <form action="/annuaire" onsubmit="event.preventDefault(); onSearch()">
+    <div class="input">
+      <input type="text" name="q" placeholder="Rechercher une société, un service, un produit, etc..." id="searchbox">
+    </div>
+    <button type="submit" class="btn"><i class="bi-search"></i> Rechercher</button>
+  </form>
+</div>
+<div id="members" class="container cards">
+  {% for member in site.members %}
+  <a href="{{member.url}}">
+    {% if member.thumbnail %}
+    <div class="image" style="background-image: url({{member.thumbnail}})"></div>
+    {% elsif member.banner %}
+    <div class="image" style="background-image: url({{member.banner}})"></div>
+    {% elsif member.logo %}
+    <div class="image" style="background-image: url({{member.logo}})"></div>
+    {% endif %}
+    <div class="title">{{member.title}}</div>
+    {% if member.description %}
+    <p>{{member.description}}</p>
+    {% endif %}
+  </a>
+  {% endfor %}
+</div>
+<section>
+  <div class="container">
+    <p>
+      Notre base de membre est aussi <a href="/members.json">disponible en JSON</a>.
+    </p>
+  </div>
+</section>
+<script src="/assets/js/lunr.js"></script>
+<script>
+  const documents = [
+    {% for member in site.members -%}
+    {
+      "title": {{member.title|strip_newlines|jsonify}},
+      "body": {{member.content|strip_html|jsonify}},
+      "description": {{member.description|strip_html|jsonify}},
+      "keywords": {% if member.keywords %}{{member.keywords|jsonify}}{% else %}[]{% endif %}.join(", "),
+      "id": {{member.url|jsonify}}
+    },
+    {%- endfor %}
+  ];
+
+  const lunrIndex = lunr(function () {
+    this.field('title');
+    this.field('body');
+    this.field('description');
+    this.field('keywords');
+    for (let doc of Object.values(documents)) {
+      this.add(doc);
+    }
+  });
+
+  function onSearch(preventLocationChange=false) {
+    const q = document.getElementById('searchbox').value.trim();
+    const members = document.getElementById('members');
+
+    if (!q) {
+      members.classList.remove('searching');
+      window.location.search = '';
+      return;
+    }
+
+    members.classList.add('searching');
+    for (const el of members.querySelectorAll('a.result')) {
+      el.classList.remove('result');
+    }
+
+    const docs = lunrIndex.search(q);
+
+    for (let doc of docs) {
+      const el = members.querySelector(`a[href="${doc.ref}"]`);
+      if (el) {
+        el.classList.add('result');
+      }
+    }
+  }
+
+  window.addEventListener('load', function() {
+    let match = RegExp('[?&]q=([^&]*)').exec(window.location.search);
+    if (match) {
+      const q = decodeURIComponent(match[1].replace(/\+/g, ' '));
+      document.getElementById('searchbox').value = q;
+      onSearch();
+    }
+  });
+</script>

@@ -1,0 +1,13 @@
+---
+layout: default
+nav_menu: actions
+---
+<div id="post-hero" class="hero"{% if page.banner %} style="background-image: url({{page.banner}});"{% endif %}>
+  <h1>{{page.title}}</h1>
+  <p>Publié le {{page.date|date:"%d/%m/%Y"}}</p>
+</div>
+<section>
+  <div class="container">
+    {{content}}
+  </div>
+</section>

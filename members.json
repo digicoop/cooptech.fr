@@ -1,0 +1,18 @@
+---
+---
+[
+{% for member in site.members -%}
+{
+    "id": {{member.url|prepend:site.url|jsonify}},
+    "name": {{member.title|jsonify}},
+    "description": {{member.description|jsonify}},
+    "keywords": {% if member.keywords %}{{member.keywords|jsonify}}{% else %}[]{% endif %},
+    "website": {{member.website|jsonify}},
+    "email": {{member.email|default:""|jsonify}},
+    "address": {{member.address|default:""|jsonify}},
+    "phone": {{member.phone|default:""|jsonify}},
+    "logo": {{member.logo|default:""|jsonify}},
+    "video": {{member.video|default:""|jsonify}}
+}{% unless forloop.last %},{% endunless %}
+{% endfor -%}
+]

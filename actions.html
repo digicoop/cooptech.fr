@@ -1,0 +1,20 @@
+---
+layout: default
+title: Actions
+nav_menu: actions
+---
+<div class="hero">
+  <h1>Nos actions</h1>
+  <p>
+    La Cooptech est une association qui a pour objectifs de promouvoir le statut coopératif, développer l'activité commerciale de ses membres et refléchir aux enjeux tech du moment.
+  </p>
+</div>
+<div id="blog" class="container cards">
+  {% for post in site.posts %}
+  <a href="{{post.url}}">
+    <div class="image" style="background-image: url({{post.thumbnail}})"></div>
+    <div class="title">{{post.title}}</div>
+    <p>Publié le {{post.date|date:"%d/%m/%Y"}}</p>
+  </a>
+  {% endfor %}
+</div>
