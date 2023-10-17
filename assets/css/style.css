@@ -93,7 +93,7 @@ footer {
  */
 
 .hero {
-  background: #e0e0e0 url(/assets/img/hero-bg.jpg) top center no-repeat;
+  background: #e0e0e0 url(../img/hero-bg.jpg) top center no-repeat;
   padding: 4rem 0 3rem;
   display: flex;
   flex-direction: column;
@@ -283,7 +283,7 @@ section > .promo-blocks:first-child {
     }
 
 #create-hero {
-  background: url(/assets/img/create-hero-bg.png) no-repeat top center;
+  background: url(../img/create-hero-bg.png) no-repeat top center;
   text-align: center;
   padding: 60px 0px 50px;
   margin-top: 50px;
