@@ -259,6 +259,7 @@ article {
   padding: 0;
   margin: 2rem auto;
   max-width: 900px;
+  text-align: center;
 }
   #tags li {
     display: inline;
