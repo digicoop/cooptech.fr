@@ -13,8 +13,9 @@ Fort de cette expérience et de la confiance de nos clients (Decathlon, But, Ref
 Nous proposons un accompagnement sur-mesure et agile pour la mise en place de solutions de gestion au plus proche des métiers.
 
 Nos grands domaines d’activité :
-- ERP : gérer les flux de données quotidiens et piloter votre entreprise en temps réel    eCommerce : démarrer un outil de vente en ligne spécifique ou complexe, du BtoC, BtoB, BtoE, BtoBtoC à la place de marché
-- Retail : développer vos canaux de ventes en suivant les besoins de vos clients
-- Start-Up/Scale-Up : structurer vos processus pour accompagner le développment de votre activité
+- [ERP](https://www.nereide.fr/offre-erp) : gérer les flux de données quotidiens et piloter votre entreprise en temps réel
+- [eCommerce](https://www.nereide.fr/offre-ecommerce) : démarrer un outil de vente en ligne spécifique ou complexe, du BtoC, BtoB, BtoE, BtoBtoC à la place de marché
+- [Retail]([https://www.nereide.fr/offre-ecommerce](https://www.nereide.fr/offre-retail)) : développer vos canaux de ventes en suivant les besoins de vos clients
+- [Start-Up/Scale-Up](https://www.nereide.fr/offre-scale-up) : structurer vos processus pour accompagner le développment de votre activité
 
 Dès sa création en 2004, Néréide a placé l’attachement aux valeurs du Logiciel Libre, à la démocratie et à la transparence au centre de son fonctionnement. Et c’est très naturellement que nous nous sommes transformés en Scop en 2017 pour rendre visibles nos engagements et participer plus largement au mouvement coopératif.
