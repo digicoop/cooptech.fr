@@ -4,6 +4,7 @@ title: Astrolabe
 website: https://www.astrolabe.coop
 description: CAE
 email: contact@astrolabe.coop
+keywords: [Numérique, "Développement logiciel", "Web design", "Systèmes embarqués", "Dev full stack", graphiste, Blockchain]
 ---
 Astrolabe est une Coopérative d’Activités et d’Entrepreneur·e·s (C.A.E.) dont les activités principales sont :
 
