@@ -6,6 +6,7 @@ description: Une Équipe au Service de vos PRojets d’Innovation
 email: contact@espridigital.fr
 address: 14 rue du sergent Escoffier 61200 Argentan
 logo: https://espridigital.fr/wp-content/uploads/2021/01/logo_espri_digital_white_reduit-1-495x400-1.png
+keywords: [Accompagnement, "Assistants vocaux", "Développement mobile", "Développement web", Digitalisation, Disponibilité, Innovation]
 ---
 ESPRI Digital est une entreprise de service informatique coopérative qui met à disposition de ses clients une équipe technique qualifiée et expérimentée afin de mener à bien leurs projets numériques. Elle intervient dans chacune des phases de projets informatiques :
 - qualification du besoin
