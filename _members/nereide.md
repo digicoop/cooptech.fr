@@ -6,6 +6,7 @@ description: Intégrateur de l'ERP libre Apache OFBiz®
 email: information@nereide.fr
 address: 8, rue des Déportés - 37000 Tours
 logo: https://www.nereide.fr/sitetheme/images/nereide-integrateur-erp-ofbiz-bl.svg
+accent_color: "#00a3b2"
 keywords: [Achat, Stock, Vente, "Point de vente (POS)", Logistique, Production, "Ressources humaines", Accompagnement, Finance, CRM, Marketing, CMS]
 ---
 Intégrateur de l’ERP Libre Apache OFBiz® depuis près de 15 ans, nous concevons des solutions de gestion pour les entreprises en leur apportant simplicité et efficacité pour développer leur activité.

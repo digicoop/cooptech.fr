@@ -15,16 +15,13 @@ nav_menu: directory
     <button type="submit" class="btn"><i class="bi-search"></i> Rechercher</button>
   </form>
 </div>
+{% include tags.html %}
 <div id="members" class="container cards">
   {% for member in site.members %}
   <a href="{{member.url|prepend:site.baseurl}}">
-    {% if member.thumbnail %}
-    <div class="image" style="background-image: url({{member.thumbnail}})"></div>
-    {% elsif member.banner %}
-    <div class="image" style="background-image: url({{member.banner}})"></div>
-    {% elsif member.logo %}
-    <div class="image" style="background-image: url({{member.logo}})"></div>
-    {% endif %}
+    <div class="image" style="{% if member.accent_color %}background-color: {{member.accent_color}}{% endif %}">
+      <div style="background-image: url({% if member.thumbnail %}{{member.thumbnail}}{% else %}{{member.logo}}{% endif %})"></div>
+    </div>
     <div class="title">{{member.title}}</div>
     {% if member.description %}
     <p>{{member.description}}</p>

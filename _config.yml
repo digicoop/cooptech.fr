@@ -1,6 +1,6 @@
 title: Cooptech
-baseurl: "/beta-cooptech" # the subpath of your site, e.g. /blog
-url: "https://digicoop.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/beta-cooptech"
+url: "https://digicoop.io"
 collections:
   members:
     output: true

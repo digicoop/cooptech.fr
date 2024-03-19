@@ -11,5 +11,6 @@ address: ADRESSE POSTALE OU DE VOS BUREAUX (OPTIONNEL)
 logo: URL DE VOTRE LOGO
 video: URL D'UNE VIDEO YOUTUBE POUR EMBED
 keywords: [KEYWORD1, KEYWORD2, ...] (OPTIONNEL)
+accent_color: HEXCOLOR
 ---
 Votre présentation en markdown

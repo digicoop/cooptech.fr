@@ -2,12 +2,12 @@
 layout: default
 nav_menu: directory
 ---
-<div class="hero"{% if page.banner %} style="background-image: url({{page.banner}});"{% endif %}>
-  {% if page.logo %}<img src="{{page.logo}}" alt="Logo">{% else %}<h1>{{page.title}}</h1>{% endif %}
+<div class="hero" style="{% if page.banner %}background-image: url({{page.banner}}){% elsif page.accent_color %}background: {{page.accent_color}}{% else %}background-image: none;{% endif %}">
+  {% if page.logo %}<img src="{{page.logo}}" alt="Logo" id="member-hero-logo">{% else %}<h1>{{page.title}}</h1>{% endif %}
 </div>
 <section>
   <div class="container">
-    <div class="section-header">
+    <div class="section-header" style="{% unless page.video %}margin-bottom: 0;{% endunless %}">
       {% if page.description %}<h2>{{page.description}}</h2>{% endif %}
       <p>
         <a href="{{page.website}}" target="_blank">{{page.website}}</a>
@@ -16,13 +16,18 @@ nav_menu: directory
         {% if page.address %} | {{page.address}}{% endif %}
       </p>
     </div>
+    {% if page.keywords %}
+    <ul id="tags">
+      {% for keyword in page.keywords %}
+      <li><a href="{{site.baseurl}}/annuaire?q={{keyword|url_encode}}">{{keyword}}</a></li>
+      {% endfor %}
+    </ul>
+    {% endif %}
     {% if page.video %}
       <iframe src="{{page.video}}" frameborder="0" allowfullscreen="" class="video-iframe"></iframe>
     {% endif %}
   </div>
 </section>
-<section>
-  <div class="container">
-    {{content}}
-  </div>
-</section>
+<article>
+  {{content}}
+</article>

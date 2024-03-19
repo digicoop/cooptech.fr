@@ -6,6 +6,7 @@ description: Nous sommes une société coopérative spécialisée dans l’accom
 email: contact@magnetic.coop
 logo: https://www.magnetic.coop/app/themes/magnetic/img/logo_magnetic.svg
 keywords: [Conseil, "Agence web", "Gestion de projet", "Développement web", "Transformation digitale", Drupal, WordPress, Typo3, E-commerce, UX-UI, "Organisme de formation", Symfony, Accessibilité]
+accent_color: "#5ddb93"
 ---
 Magnetic, est une agence web proposant son expertise dans les domaines :
 - Assistance, conseil et suivi de projet (MOA/MOE) ;
