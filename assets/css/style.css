@@ -29,7 +29,7 @@ header {
   top: 0;
   z-index: 1000;
   display: flex;
-  justify-content: center;
+  justify-content: right;
   box-shadow: 0 1px 1px rgba(0,0,0,.1);
   width: 100%;
   height: 70px;
@@ -43,9 +43,17 @@ header {
     transform: translateY(-50%);
   }
   header > nav {
+    display: none;
+  }
+  header > nav.open {
+    display: block;
+    position: absolute;
+    background: #fff;
+    top: 70px;
+    width: 100%;
   }
     header > nav > a {
-      display: inline-flex;
+      display: flex;
       align-items: center;
       justify-content: center;
       padding: 1.2rem;
@@ -60,6 +68,38 @@ header {
     header > nav > a:hover {
       color: #1baac3;
     }
+  #nav-toggle {
+    position: absolute;
+    top: 35px;
+    transform: translateY(-50%);
+    right: 15px;
+    background: transparent;
+    border: 0;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 6px;
+  }
+  #nav-toggle:hover {
+    background: #dedede;
+  }
+
+@media (min-width: 900px) {
+  header > nav {
+    display: block;
+  }
+  header > nav > a {
+    display: inline-flex;
+  }
+  #nav-toggle {
+    display: none;
+  }
+}
+
+@media (min-width: 1100px) {
+  header {
+    justify-content: center;
+  }
+}
 
 footer {
   background-color: #222;
@@ -105,6 +145,11 @@ footer {
   align-items: center;
   text-align: center;
 }
+@media (max-width: 850px) {
+  .hero {
+    padding: 2rem 0;
+  }
+}
   .hero > h1 {
     font-size: 3rem;
     color: #333;
@@ -121,9 +166,12 @@ footer {
   }
   .hero form {
     display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
     margin-top: 2rem;
-    width: 700px;
+    max-width: 750px;
+    justify-content: center;
+    padding: .5rem;
   }
     .hero form .input {
       background: #fff;
@@ -131,6 +179,7 @@ footer {
       padding: .5rem;
       flex: 1;
       box-shadow: 0 5px 0 0 rgba(0,0,0,.1);
+      min-width: 250px;
     }
     .hero form .input input {
       display: block;
@@ -142,7 +191,7 @@ footer {
       width: 100%;
     }
     .hero form button {
-      padding: 0 1.5rem;
+      padding: 1rem 1.5rem;
       font-size: 1.2rem;
       font-weight: bold;
     }
@@ -169,6 +218,16 @@ footer {
   grid-template-columns: repeat(3, 1fr);
   gap: 3rem;
   max-width: 1200px;
+}
+@media (max-width: 900px) {
+  .promo-blocks {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 500px) {
+  .promo-blocks {
+    grid-template-columns: 1fr;
+  }
 }
   .promo-blocks li {
     display: block;
@@ -240,7 +299,7 @@ section > .promo-blocks:first-child {
 
 .video-iframe {
   aspect-ratio: 16 / 9;
-  width: 100%;
+  width: 95%;
   max-width: 800px;
   box-shadow: 0 0 17px 4px rgba(0, 0, 0, .2);
   margin-bottom: 1rem;
@@ -251,6 +310,13 @@ article {
   margin: 0 auto;
   padding: 3rem 0;
   line-height: 1.5rem;
+}
+
+@media (max-width: 900px) {
+  article, section {
+    padding-left: .5rem;
+    padding-right: .5rem;
+  }
 }
 
 #tags {
@@ -290,12 +356,17 @@ article {
 #home-hero {
   padding: 8rem 0 6rem;
 }
+@media (max-width: 850px) {
+  #home-hero {
+    padding: 2rem 0 2rem;
+  }
+}
   #home-hero #tags {
     margin-bottom: 0;
   }
 
 #home-actions {
-  padding: 5rem 0 4rem;
+  padding: 5rem .5rem 4rem;
   text-align: center;
 }
   #home-actions > p {
@@ -309,8 +380,9 @@ article {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 3rem;
 }
   #home-members li {
@@ -353,6 +425,7 @@ article {
   align-items: center;
   justify-content: center;
   margin-top: 1rem;
+  flex-wrap: wrap;
 }
   #create-finance .logos img {
     width: 80px;
@@ -368,6 +441,16 @@ article {
   gap: 3rem;
   padding: 3rem;
 }
+@media (max-width: 900px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 500px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
   .cards > a {
     display: flex;
     flex-direction: column;
@@ -377,7 +460,7 @@ article {
     border: 1px solid #e4e4e4;
     text-decoration: none;
     color: #333;
-    height: 300px
+    height: 300px;
   }
   .cards > a:hover {
     box-shadow: 0 0 10px 1px rgba(0,0,0,.3);
@@ -416,4 +499,5 @@ article {
 #member-hero-logo {
   min-height: 100px;
   max-height: 200px;
+  max-width: 95%;
 }

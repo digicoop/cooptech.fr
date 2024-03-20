@@ -14,6 +14,14 @@
 
     <link rel="stylesheet" href="{{site.baseurl}}/assets/css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const nav = document.querySelector("body > header > nav");
+        document.querySelector("#nav-toggle").addEventListener("click", () => {
+          nav.classList.toggle("open");
+        });
+      });
+    </script>
   </head>
   <body>
     <header>
@@ -25,6 +33,7 @@
         <a href="{{site.baseurl}}/communaute" class="{% if page.nav_menu == 'community' or layout.nav_menu == 'community' %}active{% endif %}">Communauté</a>
         <a href="{{site.baseurl}}/creer" class="{% if page.nav_menu == 'create' or layout.nav_menu == 'create' %}active{% endif %}">Entreprendre</a>
       </nav>
+      <button id="nav-toggle"><i class="bi-list"></i></button>
     </header>
     {{content}}
     <footer>
