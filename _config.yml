@@ -1,6 +1,6 @@
 title: Cooptech
-baseurl: "/beta-cooptech"
-url: "https://digicoop.io"
+baseurl: ""
+url: "https://cooptech.fr"
 collections:
   members:
     output: true
