@@ -340,7 +340,7 @@ section > .promo-blocks:first-child {
 article {
   max-width: 900px;
   margin: 0 auto;
-  padding: 3rem 0.5rem;
+  padding: 0 0.5rem;
   line-height: 1.5rem;
 }
   article img {
@@ -350,8 +350,11 @@ article {
   }
 
 @media (min-width: 900px) {
-  article, section {
+  section {
     padding: 3rem 0;
+  }
+  article {
+    padding: 0 0 3rem;
   }
 }
 
