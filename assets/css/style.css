@@ -62,8 +62,8 @@ header {
       text-decoration: none;
     }
     header > nav > a.active {
-      border-bottom-color: #1baac3;
-      color: #1baac3;
+      background: #1baac3;
+      color: #fff;
     }
     header > nav > a:hover {
       color: #1baac3;
@@ -90,6 +90,11 @@ header {
   header > nav > a {
     display: inline-flex;
   }
+  header > nav > a.active {
+    background: transparent;
+    border-bottom-color: #1baac3;
+    color: #1baac3;
+  }
   #nav-toggle {
     display: none;
   }
@@ -104,19 +109,14 @@ header {
 footer {
   background-color: #222;
   color: #aaa;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   padding: 2rem;
   margin-top: auto;
 }
   footer a {
     color: #aaa;
   }
-  footer .col:not(:first-child) {
-    margin-left: 2rem;
-    padding-left: 2rem;
-    border-left: 1px solid #333;
+  footer .col {
+    margin-bottom: 1rem;
   }
     footer .col h4 {
       margin-top: 0;
@@ -126,6 +126,19 @@ footer {
     footer .col p i {
       margin-right: 10px;
     }
+
+@media (min-width: 600px) {
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  footer .col:not(:first-child) {
+    margin-left: 2rem;
+    padding-left: 2rem;
+    border-left: 1px solid #333;
+  }
+}
 
 .container {
   max-width: 1200px;
@@ -137,31 +150,26 @@ footer {
  */
 
 .hero {
-  background: #e0e0e0 url(../img/hero-bg.jpg) top center no-repeat;
-  padding: 4rem 0 3rem;
+  background: #08b6d4;
+  padding: 2rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
-@media (max-width: 850px) {
-  .hero {
-    padding: 2rem 0;
-  }
-}
   .hero > h1 {
     font-size: 3rem;
     color: #333;
   }
     .hero > h1 em {
-      color: #1baac3;
+      color: #fff;
       font-style: normal;
     }
   .hero > p {
     font-size: 1.2rem;
     line-height: 1.8rem;
-    color: #555;
+    color: #fff;
     max-width: 800px;
   }
   .hero form {
@@ -196,7 +204,29 @@ footer {
       font-weight: bold;
     }
 
+@media (min-width: 600px) {
+  .hero {
+    background: #e0e0e0 url(../img/hero-bg.jpg) top center no-repeat;
+  }
+  .hero > h1 em {
+    color: #1baac3;
+  }
+  .hero > p {
+    color: #555;
+  }
+  .hero form .input {
+    min-width: 400px;
+  }
+}
+
+@media (min-width: 850px) {
+  .hero {
+    padding: 4rem 0 3rem;
+  }
+}
+
 .btn {
+  display: inline-block;
   border: 0;
   border-radius: 5px;
   background: linear-gradient(to bottom,#1baac3 0%,#1798af 100%);
@@ -215,18 +245,18 @@ footer {
   margin: 0 auto;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
   gap: 3rem;
   max-width: 1200px;
 }
-@media (max-width: 900px) {
+@media (min-width: 500px) {
   .promo-blocks {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (max-width: 500px) {
+@media (min-width: 900px) {
   .promo-blocks {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
   .promo-blocks li {
@@ -308,14 +338,13 @@ section > .promo-blocks:first-child {
 article {
   max-width: 900px;
   margin: 0 auto;
-  padding: 3rem 0;
+  padding: 3rem 0.5rem;
   line-height: 1.5rem;
 }
 
-@media (max-width: 900px) {
+@media (min-width: 900px) {
   article, section {
-    padding-left: .5rem;
-    padding-right: .5rem;
+    padding: 3rem 0;
   }
 }
 
@@ -354,11 +383,11 @@ article {
   */
 
 #home-hero {
-  padding: 8rem 0 6rem;
+  padding: 2rem 0 2rem;
 }
-@media (max-width: 850px) {
+@media (min-width: 850px) {
   #home-hero {
-    padding: 2rem 0 2rem;
+    padding: 8rem 0 6rem;
   }
 }
   #home-hero #tags {
@@ -391,12 +420,18 @@ article {
   }
     #home-members a {
       display: block;
-      width: 150px;
+      width: 100px;
       height: 100px;
       background-repeat: no-repeat;
       background-size: contain;
       background-position: center center;
     }
+
+@media (min-width: 350px) {
+  #home-members a {
+    width: 150px;
+  }
+}
 
 #create-hero {
   background: url(../img/create-hero-bg.png) no-repeat top center;
@@ -437,18 +472,19 @@ article {
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
   gap: 3rem;
-  padding: 3rem;
+  padding: 1rem;
 }
-@media (max-width: 900px) {
+@media (min-width: 500px) {
   .cards {
     grid-template-columns: repeat(2, 1fr);
+    padding: 3rem;
   }
 }
-@media (max-width: 500px) {
+@media (min-width: 900px) {
   .cards {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
   .cards > a {
@@ -495,6 +531,20 @@ article {
       text-overflow: ellipsis;
       overflow: hidden;
     }
+
+#members-search-label {
+  display: none;
+  margin: auto;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+#members-search-label button {
+  border: 0;
+  background: none;
+  text-decoration: underline;
+  cursor: pointer;
+}
 
 #member-hero-logo {
   min-height: 100px;

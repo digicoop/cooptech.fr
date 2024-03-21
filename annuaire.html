@@ -16,6 +16,10 @@ nav_menu: directory
   </form>
 </div>
 {% include tags.html %}
+<div id="members-search-label">
+  <span></span>
+  <button onclick="clearSearch()">Effacer</button>
+</div>
 <div id="members" class="container cards">
   {% for member in site.members %}
   <a href="{{member.url|prepend:site.baseurl}}">
@@ -63,25 +67,43 @@ nav_menu: directory
   function onSearch(preventLocationChange=false) {
     const q = document.getElementById('searchbox').value.trim();
     const members = document.getElementById('members');
+    const label = document.getElementById("members-search-label");
 
     if (!q) {
-      members.classList.remove('searching');
-      window.location.search = '';
+      clearSearch();
       return;
     }
 
+    clearSearch(false);
     members.classList.add('searching');
-    for (const el of members.querySelectorAll('a.result')) {
-      el.classList.remove('result');
-    }
-
     const docs = lunrIndex.search(q);
 
+    let found = false;
     for (let doc of docs) {
       const el = members.querySelector(`a[href="${doc.ref}"]`);
       if (el) {
         el.classList.add('result');
+        found = true;
       }
+    }
+
+    label.querySelector("span").innerText = found ? `Nos coopératives pour "${q}"` : `Pas de résultats pour "${q}"`;
+    label.style.display = "block";
+  }
+
+  function clearSearch(resetLocation=true) {
+    const members = document.getElementById('members');
+    const label = document.getElementById("members-search-label");
+
+    members.classList.remove('searching');
+    label.style.display = "none";
+
+    if (resetLocation) {
+      window.location.search = '';
+    }
+
+    for (const el of members.querySelectorAll('a.result')) {
+      el.classList.remove('result');
     }
   }
 
@@ -91,6 +113,7 @@ nav_menu: directory
       const q = decodeURIComponent(match[1].replace(/\+/g, ' '));
       document.getElementById('searchbox').value = q;
       onSearch();
+      document.getElementById("tags").scrollIntoView();
     }
   });
 </script>
