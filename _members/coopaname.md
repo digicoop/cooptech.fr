@@ -4,7 +4,7 @@ title: Coopaname
 website: https://www.coopaname.coop
 description: CAE
 email: coop@coopaname.coop
-keywords: ["comptabilité libre", Indépendant, "Logiciels libres", Odoo, Opaga, "Open Source"]
+keywords: ["comptabilité libre", Indépendant, Développement, "Logiciels libres", Odoo, Opaga, "Open Source"]
 logo: https://www.coopaname.coop/sites/www.coopaname.coop/files/logo-coopaname.svg
 accent_color: "#000"
 ---

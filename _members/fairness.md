@@ -6,6 +6,6 @@ description: Une coopérative qui vous accompagne dans la conception responsable
 email: equipe@fairness.coop
 address: 12 rue Vivienne 75002 Paris
 logo: https://fairness.coop/image/fairness_logo.svg
-keywords: ["Accessibilité numérique", "Architecture hexagonale", "conception d'architectures techniques", DDD, "Développement web", Éco-conception, Formation, "Logiciels libres", "Numérique responsable", Php, Python, Svelte, React, Symfony]
+keywords: ["Accessibilité", "Architecture hexagonale", "conception d'architectures techniques", DDD, Développement, "Développement web", "Eco-conception", Formation, "Logiciels libres", "Numérique responsable", Php, Python, Svelte, React, Symfony, "Open Source"]
 ---
 Coopérative du numérique engagée pour le développement soutenable, Fairness se structure autour de trois pôles d’expertise : la conception et le développement responsables de sites et applications web, l’audit et la formation. Fondée en 2016, la coopérative regroupe une dizaine de coopérateurs, qui mettent leurs savoir-faire et leur expertise individuelle au service du collectif, dans une approche démocratique et transparente.

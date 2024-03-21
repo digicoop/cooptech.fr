@@ -6,7 +6,7 @@ description: Agence web responsable et experte Drupal
 email: contact@insite.coop
 address: Bazaar St So, Dock 4, 292 rue Camille Guérin 59800 Lille 
 logo: https://www.insite.coop/themes/custom/front/logo.svg
-keywords: ["Agence web", "Drupal", "Stratégie numérique", AMO, Agilité, SEO, RGPD, "Solutions digitales", "Site internet", Intranet, Extranet, "Fermes/Usines à sites", TMA, "UI-UX Design", "Identité graphique", Ergonomie, Accessibilité, "R&D"]
+keywords: ["Agence web", Développement, "Drupal", "Stratégie numérique", AMO, Agilité, SEO, RGPD, "Solutions digitales", "Site internet", Intranet, Extranet, "Fermes/Usines à sites", TMA, "UI-UX Design", "Identité graphique", Ergonomie, Accessibilité, "R&D"]
 ---
 INSITE est une agence web responsable et experte Drupal.
 Depuis 1996, elle accompagne ses clients dans la création de leurs outils web sur mesure, basés sur la technologie Drupal.
