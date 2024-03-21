@@ -51,6 +51,8 @@ header {
     background: #fff;
     top: 70px;
     width: 100%;
+    border-bottom: 1px solid #d5d5d5;
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
   }
     header > nav > a {
       display: flex;
@@ -553,8 +555,11 @@ article {
   cursor: pointer;
 }
 
-#member-hero-logo {
-  min-height: 100px;
-  max-height: 200px;
-  max-width: 95%;
+#member-hero {
+  background: #e0e0e0;
 }
+  #member-hero img {
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 95%;
+  }
