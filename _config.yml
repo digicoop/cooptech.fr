@@ -5,8 +5,8 @@ collections:
   members:
     output: true
     layout: member
-    permalink: /members/:name
+    permalink: /societes/:name
   posts:
-    permalink: /actions/:year/:month/:title
+    permalink: /nos-actions/:year/:month/:title
 exclude:
   - "_members/TEMPLATE"
