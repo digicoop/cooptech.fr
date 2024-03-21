@@ -66,18 +66,29 @@ nav_menu: directory
   });
 
   document.addEventListener('DOMContentLoaded', () => {
+    const searchbox = document.getElementById('searchbox');
+
     let match = RegExp('[?&]q=([^&]*)').exec(window.location.search);
     if (match) {
       const q = decodeURIComponent(match[1].replace(/\+/g, ' '));
-      document.getElementById('searchbox').value = q;
+      searchbox.value = q;
       onSearch();
-      document.getElementById("tags").scrollIntoView();
+      searchbox.scrollIntoView();
     }
 
     document.querySelector(".hero form").addEventListener("submit", (e) => {
       e.preventDefault();
       onSearch();
+      searchbox.scrollIntoView();
     });
+
+    for (const tag of document.querySelectorAll("#tags a")) {
+      tag.addEventListener("click", (e) => {
+        e.preventDefault();
+        searchbox.value = "#" + tag.innerText;
+        onSearch();
+      });
+    }
   });
 
   function onSearch(preventLocationChange=false) {
