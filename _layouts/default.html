@@ -17,7 +17,7 @@
     <script>
       document.addEventListener("DOMContentLoaded", () => {
         const nav = document.querySelector("body > header > nav");
-        document.querySelector("#nav-toggle").addEventListener("click", () => {
+        document.getElementById("nav-toggle").addEventListener("click", () => {
           nav.classList.toggle("open");
         });
       });
@@ -30,7 +30,7 @@
         <a href="{{site.baseurl}}/" class="{% if page.nav_menu == 'home' or layout.nav_menu == 'home' %}active{% endif %}">Accueil</a>
         <a href="{{site.baseurl}}/actions" class="{% if page.nav_menu == 'actions' or layout.nav_menu == 'actions' %}active{% endif %}">Nos actions</a>
         <a href="{{site.baseurl}}/annuaire" class="{% if page.nav_menu == 'directory' or layout.nav_menu == 'directory' %}active{% endif %}">Trouver une coopérative</a>
-        <a href="{{site.baseurl}}/communaute" class="{% if page.nav_menu == 'community' or layout.nav_menu == 'community' %}active{% endif %}">Communauté</a>
+        <a href="{{site.baseurl}}/association" class="{% if page.nav_menu == 'community' or layout.nav_menu == 'community' %}active{% endif %}">L'association</a>
         <a href="{{site.baseurl}}/creer" class="{% if page.nav_menu == 'create' or layout.nav_menu == 'create' %}active{% endif %}">Entreprendre</a>
       </nav>
       <button id="nav-toggle"><i class="bi-list"></i></button>

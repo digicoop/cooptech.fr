@@ -5,5 +5,8 @@ collections:
   members:
     output: true
     layout: member
+    permalink: /members/:name
+  posts:
+    permalink: /actions/:year/:month/:title
 exclude:
   - "_members/TEMPLATE"
