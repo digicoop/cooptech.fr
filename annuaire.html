@@ -81,7 +81,7 @@ nav_menu: directory
   });
 
   function onSearch(preventLocationChange=false) {
-    let q = normalizeStr(document.getElementById('searchbox').value.trim());
+    const q = document.getElementById('searchbox').value.trim();
     const members = document.getElementById('members');
     const label = document.getElementById("members-search-label");
 
@@ -95,10 +95,10 @@ nav_menu: directory
 
     let docs;
     if (q.substr(0, 1) === "#") {
-      q = q.substr(1);
-      docs = documents.filter(doc => doc.keywords.includes(q)).map(doc => ({ref: doc.id}));
+      const tag = normalizeStr(q.substr(1));
+      docs = documents.filter(doc => doc.keywords.includes(tag)).map(doc => ({ref: doc.id}));
     } else {
-      docs = lunrIndex.search(q);
+      docs = lunrIndex.search(normalizeStr(q));
     }
 
     let found = false;

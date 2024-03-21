@@ -6,7 +6,8 @@ description: Créateur de vos solutions numériques responsables
 email: contact@empreintedigitale.fr
 address: 11, rue des Noyers 49000 Angers
 logo: https://empreintedigitale.fr/wp-content/themes/empreinte/img/logo-with-baseline-white.svg
-keywords: [Accompagnement, Développement, "Développement web", Formation, "Vue JS", Backbone, JQuery, Symfony, Hébergement, Infogérance, Infrastructure, "Transformation digitale", RGPD, "Accessibilité"]
+keywords: [Accompagnement, Développement, "Développement web", Formation, "Vue JS", Backbone, JQuery, Symfony, Hébergement,
+Infogérance, Infrastructure, "Transformation digitale", RGPD, "Accessibilité", "Eco-conception"]
 accent_color: "#d6084f"
 ---
 Empreinte Digitale est une entreprise coopérative basée à Angers. Depuis 1993, nous proposons des solutions numériques innovantes et évolutives, à partir de technologies libres et open source. Aujourd’hui, nous créons avec nos clients des outils métiers sur-mesure, proposons des solutions d’hébergement et un progiciel de gestion d’archives numérisées. Nous sommes également experts en accessibilité numérique et militons pour faire avancer ce sujet sociétal majeur. Nous accompagnons aussi à la mise en conformité au RGPD
