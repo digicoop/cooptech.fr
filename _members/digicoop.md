@@ -6,7 +6,7 @@ description: Expert du travail collaboratif
 email: contact@digicoop.io
 address: 5 rue Richard Lenoir 75011 Paris
 logo: https://digicoop.io/assets/img/logo.png
-video: https://www.youtube.com/embed/8dKFgIYKPQs
+video: https://www.youtube.com/embed/5kWAVcXGpAo
 keywords: ["Gestion du travail", "Gestion de projet", "Transformation digitale", Collaboration, Flexibilité, "Intelligence collective", Télétravail, Automatisation, Personnalisation, Kanban, Scrum, Calendrier, Timeline, Rapport, "Analyse de données", Industrie, "Ressources humaines", "Agence web", Marketing]
 ---
 [![Logo Kantree](https://cdn.kantree.io/static/promo/img/logo.png)](https://kantree.io/fr)
