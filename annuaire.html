@@ -112,16 +112,16 @@ nav_menu: directory
       docs = lunrIndex.search(normalizeStr(q));
     }
 
-    let found = false;
+    let count = 0;
     for (let doc of docs) {
       const el = members.querySelector(`a[href="${doc.ref}"]`);
       if (el) {
         el.classList.add('result');
-        found = true;
+        count++;
       }
     }
 
-    label.querySelector("span").innerText = found ? `Nos coopératives pour "${q}"` : `Pas de résultats pour "${q}"`;
+    label.querySelector("span").innerText = count > 0 ? `Nos ${count} coopératives pour "${q}"` : `Pas de résultats pour "${q}"`;
     label.style.display = "block";
   }
 

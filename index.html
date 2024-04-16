@@ -45,7 +45,7 @@ nav_menu: home
 </div>
 <section class="grey">
   <div class="container">
-    <div class="section-header"><h2>Découvrez nos membres</h2></div>
+    <div class="section-header"><h2>Découvrez nos {{site.members|size}} membres</h2></div>
     <ul id="home-members">
       {% for member in site.members %}
       <li><a href="{{member.url|prepend:site.baseurl}}" style="background-image: url({{member.logo}});{% if member.accent_color %}background-color: {{member.accent_color}}{% endif %}" title="{{member.title}}"></a></li>
