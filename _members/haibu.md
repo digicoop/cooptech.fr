@@ -5,7 +5,7 @@ website: https://lydra.fr
 description: Conseil et services DevOps en logiciels libres et SaaS souverains
 email: support@lydra.fr
 logo: https://lydra.fr/img/logo_lydra.svg
-keywords: DevOps, Automatisation, "Intégration continue", "Déploiement continu", "Open Source", Souveraineté, "Administration système", "Administration Cloud", "DSI externalisé", Docker, Nextcloud, GitLab, Ansible, Terraform
+keywords: DevOps, Automatisation, "Intégration continue", "Déploiement continu", "Open Source", Souveraineté, "Administration système", "Administration Cloud", "DSI externalisé", Docker, Nextcloud, GitLab, Ansible, Terraform, Infrastructure
 ---
 Haïbu SCOP est une ESN et Start Up coopérative innovante qui propose des solutions numériques éthiques pour les organisations, en combinant des prestations (Cloud et DevOps) de haute qualité (audit, mentorat, formation) et des services en ligne (SaaS) basés sur des logiciels libres. Notre mission est de garantir la souveraineté numérique de nos clients, tout en respectant strictement le RGPD et en favorisant la transparence. Notre offre inclut un support de proximité en français, des formations continues, et des solutions entièrement hébergées en France.
 
