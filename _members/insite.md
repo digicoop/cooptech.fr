@@ -15,13 +15,16 @@ L’entreprise a réalisé plusieurs centaines de projets pour des acteurs publi
 INSITE accompagne ses clients dans 4 domaines d’expertise : Stratégie web / Solutions techniques / UI & UX Design / Recherche et Développement.
 
 Prestations proposées par l’agence web :
-- Annuaire    Audit, conseil & formation
+- Etude, audit, conseil et AMO
+- Expertise Drupal
 - Ferme de sites / Usine à sites
-- Identité graphique
+- Formation
+- Hébergement
+- Identité graphique print et web, déclinaison sur tous supports
 - Institutionnel / Corporate
 - Intranet / Extranet
 - Site participatif / Plateforme collaborative
-- Site portail
-- Site vitrine
+- Site portail et site centre de ressources
+- Site vitrine et site institutionnel
 - Site web événementiel
 - Tierce Maintenance Applicative
