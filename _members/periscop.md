@@ -1,7 +1,7 @@
 ---
 layout: member
 title: PeriScop
-website: [URL](https://www.periscop.tech)
+website: https://www.periscop.tech
 description: ESN coopérative d'expertise technique et stratégique
 email: contact@periscop.tech
 address: 26 avenue Jean Kuntzmannn, 38330 Montbonnot-Saint-Martin
