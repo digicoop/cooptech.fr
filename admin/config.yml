@@ -2,6 +2,7 @@ backend:
   name: github
   repo: digicoop/cooptech.fr
   branch: main
+  base_url: https://cooptech-auth.maxime-e1c.workers.dev
 
 media_folder: assets/media
 
