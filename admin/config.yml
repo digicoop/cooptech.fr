@@ -1,0 +1,52 @@
+backend:
+  name: github
+  repo: digicoop/cooptech.fr
+  branch: main
+
+media_folder: assets/media
+
+collections:
+  - name: blog
+    label: Blog
+    folder: _posts
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "blog" }
+      - { label: "Titre", name: "title", widget: "string" }
+      - { label: "Catégorie", name: "category", widget: "select", options: [
+        "Meetups",
+        "Actualités"
+      ]}
+      - { label: "Vignette", name: "thumbnail", widget: "image", allow_multiple: false, required: false }
+      - { label: "Corps", name: "body", widget: "markdown" }
+
+  - name: members
+    label: Membres
+    folder: _members
+    create: true
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "member" }
+      - { label: "Société", name: "title", widget: "string" }
+      - { label: "Logo", name: "logo", widget: "image", allow_multiple: false }
+      - { label: "Site web", name: "website", widget: "string" }
+      - { label: "Email", name: "email", widget: "string" }
+      - { label: "Téléphone", name: "phone", widget: "string", required: false }
+      - { label: "Description courte", name: "description", widget: "text" }
+      - { label: "Vidéo", name: "video", widget: "string", hint: "URL d'une video embed (si youtube, activer option enhanced privacy)" }
+      - { label: "Mot clés", name: "keywords", widget: "select", multiple: true, options: [
+        "Développement Web",
+        "Transformation Digitale",
+        "Business Intelligence",
+        "Data",
+        "Collaboration",
+        "Infrastructure",
+        "Open Source",
+        "Accessibilité",
+        "Eco-conception",
+        "IA"
+      ]}
+      - { label: "Présentation", name: "body", widget: "markdown" }
+      - { label: "Couleur", name: "accent_color", widget: "color" }
+      - { label: "Bannière", name: "banner", widget: "image", allow_multiple: false, required: false, hint: "Utilise le logo si non fourni" }
+      - { label: "Vignette", name: "thumbnail", widget: "image", allow_multiple: false, required: false, hint: "Utilise le logo si non fourni" }
