@@ -3,8 +3,235 @@ backend:
   repo: digicoop/cooptech.fr
   branch: main
   base_url: https://cooptech-auth.maxime-e1c.workers.dev
+  auth_scope: repo
+  open_authoring: true
 
+site_url: https://cooptech.fr
 media_folder: assets/media
+locale: fr
+publish_mode: editorial_workflow
+show_preview_links: false
+
+keywords: &keywords
+- "Identit\xE9 graphique"
+- Investissement technique
+- "Accessibilit\xE9"
+- "Agilit\xE9"
+- Holacracy
+- Open Source
+- Open data
+- Extranet
+- Dev full stack
+- "logiciels sur-mesure et \xE0 usages sp\xE9cifiques"
+- Open science
+- Kubernetes
+- RGPD
+- "Conception m\xE9canique"
+- "Qualit\xE9 industrielle"
+- "Num\xE9rique responsable"
+- Python
+- "D\xE9veloppement mobile"
+- Stock
+- Agence web
+- "Int\xE9gration ERP"
+- Scrum
+- "Accessibilit\xE9 num\xE9rique"
+- Consulting
+- Tableaux de bord
+- "Serveur d'identit\xE9 0AUTH2 / 0IDC"
+- dataviz
+- Eco-conception web
+- "Exp\xE9riences interactives"
+- Timeline
+- Product Manager
+- "Syst\xE8mes & R\xE9seaux"
+- Formation
+- FAI
+- "R\xE9seau"
+- Administration Cloud
+- "D\xE9veloppement sur mesure"
+- "D\xE9ploiement continu"
+- "Cloud priv\xE9"
+- Cloud Management
+- Product Owner
+- CRM
+- Gouvernance Cyber
+- Fibre
+- Cloud alternatif
+- Personnalisation
+- "Donn\xE9es de la recherche"
+- Certification
+- Scenari
+- "Conformit\xE9 RGPD"
+- React
+- Docker
+- Svelte
+- "Ing\xE9nierie Logicielle (FrontEnd BackEnd Mobile)"
+- Avisynth
+- IA
+- Data
+- Linux
+- TMA
+- xDSL
+- "Ind\xE9pendant"
+- DBA
+- Design thinking
+- SEO
+- Conception produit
+- Terraform
+- "D\xE9veloppement serveur"
+- Support
+- Data Platform
+- Architecture applicative
+- Nextcloud
+- Expertise
+- SGBD
+- "Solutions \xE9ditoriales et documentaires"
+- "Fermes/Usines \xE0 sites"
+- "Int\xE9gration Microsoft Azure"
+- "D\xE9veloppement web"
+- Accompagnement
+- DDD
+- Web design
+- Architecture
+- Automatisation
+- "Vid\xE9o"
+- Assistants vocaux
+- "Int\xE9gration PGI"
+- Design
+- CCMS
+- Satellite
+- "D\xE9veloppement logiciel"
+- Architecture logicielle
+- PMO
+- Automatisme
+- Industrie
+- API Platform
+- Audit
+- "D\xE9veloppement front et back"
+- "comptabilit\xE9 libre"
+- Business intelligence
+- "Strat\xE9gie num\xE9rique"
+- "Administration syst\xE8me"
+- Conseil
+- Gestion du travail
+- "\xC9co-conception"
+- Architecture hexagonale
+- Intranet
+- Devops
+- "Bases de doon\xE9es"
+- FTTO
+- "DSI externalis\xE9"
+- Symfony
+- Conduite du changement
+- Haxe
+- E-commerce
+- "Num\xE9rique"
+- "D\xE9veloppement Web"
+- GreenOps
+- Drupal
+- Cloud
+- Architecture Cloud
+- Direction technique
+- "Flexibilit\xE9"
+- "D\xE9veloppement Front"
+- WiFi
+- Intelligence collective
+- "Int\xE9gration continue"
+- Prestashop
+- Go
+- FTTH
+- "Analyse de donn\xE9es"
+- Messagerie
+- Export Control
+- Open government
+- RPA
+- DevSecOps
+- Solutions digitales
+- Calendrier
+- Achat
+- "Disponibilit\xE9"
+- "Administration r\xE9seaux"
+- "D\xE9veloppement"
+- CMS
+- Collaboration
+- web
+- Innovation
+- Finance
+- Data literacy
+- Modern Data Warehouse
+- "H\xE9bergement"
+- Maintenance
+- Ressources humaines
+- Opaga
+- Conseil et expertise technique
+- UX-UI
+- conception d'architectures techniques
+- Odoo
+- "Management de l\u2019innovation"
+- Ansible
+- "D\xE9ploiement"
+- Typo3
+- Transformation digitale
+- Vente
+- Next.js
+- Organisme de formation
+- Chef de projet industriel
+- UI-UX Design
+- Developpement Front & Back
+- Site internet
+- audit data
+- Cloud Architecture
+- Run
+- WordPress
+- "Op\xE9rateur"
+- R&D
+- Rust
+- Marketing
+- PostgreSQL
+- "Souverainet\xE9"
+- Digitalisation
+- Infrastructure
+- Ops
+- Production
+- Progiciel de gestion
+- Shopify
+- "Architecture Syst\xE8me"
+- Blockchain
+- Ergonomie
+- Gestion de projet et de programme
+- 4G
+- "H\xE9bergement de donn\xE9es"
+- Ffmpeg
+- DevOps
+- Javascript
+- "T\xE9l\xE9travail"
+- DevOps & SRE
+- Vue JS
+- graphiste
+- "Communs num\xE9riques"
+- Rapport
+- Graphisme
+- "Qualit\xE9 logicielle"
+- Kanban
+- RJ45
+- Logistique
+- Gestion de projet
+- Django
+- PHP
+- Authentification unique
+- "Syst\xE8mes embarqu\xE9s"
+- Logiciels libres
+- SAP
+- 5G
+- Angular
+- Point de vente (POS)
+- C++
+- AMO
+- Eco-conception
+- Chef de projet informatique
+- GitLab
+- Php
 
 collections:
   - name: news
@@ -49,18 +276,7 @@ collections:
       - { label: "Site web", name: "website", widget: "string" }
       - { label: "Email", name: "email", widget: "string" }
       - { label: "Description courte", name: "description", widget: "text" }
-      - { label: "Mot clés", name: "keywords", widget: "select", multiple: true, options: [
-        "Développement Web",
-        "Transformation Digitale",
-        "Business Intelligence",
-        "Data",
-        "Collaboration",
-        "Infrastructure",
-        "Open Source",
-        "Accessibilité",
-        "Eco-conception",
-        "IA"
-      ]}
+      - { label: "Mot clés", name: "keywords", widget: "select", multiple: true, options: *keywords }
       - { label: "Présentation", name: "body", widget: "markdown" }
       - { label: "Vidéo", name: "video", widget: "string", required: false, hint: "URL d'une video embed (si youtube, activer option enhanced privacy)" }
       - { label: "Couleur", name: "accent_color", widget: "color", required: false }

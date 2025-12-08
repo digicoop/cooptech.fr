@@ -10,3 +10,6 @@ collections:
     permalink: /nos-actions/:year/:month/:title
 exclude:
   - "_members/TEMPLATE"
+  - "extract-keywords.py"
+  - "jekyll.sh"
+  - "README.md"
