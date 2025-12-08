@@ -7,19 +7,35 @@ backend:
 media_folder: assets/media
 
 collections:
-  - name: blog
-    label: Blog
+  - name: news
+    label: Actualités
     folder: _posts
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    filter:
+      field: category
+      value: Actualités
     fields:
       - { label: "Layout", name: "layout", widget: "hidden", default: "blog" }
+      - { label: "Catégorie", name: "category", widget: "hidden", default: "Actualités"}
       - { label: "Titre", name: "title", widget: "string" }
-      - { label: "Catégorie", name: "category", widget: "select", options: [
-        "Meetups",
-        "Actualités"
-      ]}
       - { label: "Vignette", name: "thumbnail", widget: "image", allow_multiple: false, required: false }
+      - { label: "Corps", name: "body", widget: "markdown" }
+
+  - name: meetups
+    label: Meetups
+    folder: _posts
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    filter:
+      field: category
+      value: Meetups
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "blog" }
+      - { label: "Catégorie", name: "category", widget: "hidden", default: "Meetups"}
+      - { label: "Vignette", name: "thumbnail", widget: "hidden", default: "/assets/img/post-meetup-thumb.jpg" }
+      - { label: "Titre", name: "title", widget: "string" }
+      - { label: "Date du meetup", name: "meetup_date", widget: "date"}
       - { label: "Corps", name: "body", widget: "markdown" }
 
   - name: members
@@ -32,9 +48,7 @@ collections:
       - { label: "Logo", name: "logo", widget: "image", allow_multiple: false }
       - { label: "Site web", name: "website", widget: "string" }
       - { label: "Email", name: "email", widget: "string" }
-      - { label: "Téléphone", name: "phone", widget: "string", required: false }
       - { label: "Description courte", name: "description", widget: "text" }
-      - { label: "Vidéo", name: "video", widget: "string", hint: "URL d'une video embed (si youtube, activer option enhanced privacy)" }
       - { label: "Mot clés", name: "keywords", widget: "select", multiple: true, options: [
         "Développement Web",
         "Transformation Digitale",
@@ -48,6 +62,8 @@ collections:
         "IA"
       ]}
       - { label: "Présentation", name: "body", widget: "markdown" }
-      - { label: "Couleur", name: "accent_color", widget: "color" }
+      - { label: "Vidéo", name: "video", widget: "string", required: false, hint: "URL d'une video embed (si youtube, activer option enhanced privacy)" }
+      - { label: "Couleur", name: "accent_color", widget: "color", required: false }
       - { label: "Bannière", name: "banner", widget: "image", allow_multiple: false, required: false, hint: "Utilise le logo si non fourni" }
       - { label: "Vignette", name: "thumbnail", widget: "image", allow_multiple: false, required: false, hint: "Utilise le logo si non fourni" }
+      - { label: "Téléphone", name: "phone", widget: "string", required: false }
