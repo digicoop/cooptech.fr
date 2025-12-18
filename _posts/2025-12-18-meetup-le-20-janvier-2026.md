@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: post
 category: Meetups
 thumbnail: /assets/img/post-meetup-thumb.jpg
 title: MeetUp le 20 janvier 2026
