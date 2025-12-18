@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: post
 category: Actualités
 title: Salon OSXP
 thumbnail: /assets/media/logo_osxp_aplat-261x250.png.webp
