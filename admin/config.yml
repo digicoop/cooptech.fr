@@ -243,7 +243,7 @@ collections:
       field: category
       value: Actualités
     fields:
-      - { label: "Layout", name: "layout", widget: "hidden", default: "blog" }
+      - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
       - { label: "Catégorie", name: "category", widget: "hidden", default: "Actualités"}
       - { label: "Titre", name: "title", widget: "string" }
       - { label: "Vignette", name: "thumbnail", widget: "image", allow_multiple: false, required: false }
@@ -258,7 +258,7 @@ collections:
       field: category
       value: Meetups
     fields:
-      - { label: "Layout", name: "layout", widget: "hidden", default: "blog" }
+      - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
       - { label: "Catégorie", name: "category", widget: "hidden", default: "Meetups"}
       - { label: "Vignette", name: "thumbnail", widget: "hidden", default: "/assets/img/post-meetup-thumb.jpg" }
       - { label: "Titre", name: "title", widget: "string" }
