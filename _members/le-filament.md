@@ -4,6 +4,7 @@ title: Le Filament
 logo: https://le-filament.com/images/logo-lefilament-V.svg
 website: https://le-filament.com/
 email: contact@le-filament.com
+address: 27 Rue d'Aubuisson, 31000 Toulouse
 description: Le Filament est une Société Coopérative qui accompagne les
   structures dans leur usage du numérique, principalement autour de l'outil de
   gestion Odoo et dans une posture de "coolaboration".
