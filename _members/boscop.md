@@ -1,6 +1,6 @@
 ---
 layout: member
-logo: https://boscop.fr/wp-content/themes/boscop/dist/design-system/logo-horizontal-borderless.svg?v=1738569985
+logo: /assets/media/logo_horizontal_sans_baseline_gunmetal.svg
 keywords:
   - Hébergement
   - Cloud privé
