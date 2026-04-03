@@ -1,6 +1,6 @@
 ---
 layout: member
-logo: /assets/media/logo_horizontal_sans_baseline_gunmetal.svg
+logo: /assets/media/logo_horizontal_sans_baseline_gunmetal2.svg
 keywords:
   - Hébergement
   - Cloud privé
