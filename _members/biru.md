@@ -1,14 +1,23 @@
 ---
 layout: member
+logo: https://tenzu.net/media/images/biru_logo_web_TymRgLg.original.svg
+keywords:
+  - Gestion de projets
+  - Développement web
+  - Développement
+  - UX-UI
+  - Collaboration
+  - Kanban
+  - Logiciels libres
+  - Open Source
+  - Python
+accent_color: ""
+banner: https://tenzu.net/media/images/background_empty_animated.original.svg
+address: 61 rue de lyon, 75012 Paris, France
 title: BIRU
 website: https://biru.sh/
-description: Nous développons le logiciel de gestion de projet opensource Tenzu
-banner: https://tenzu.net/media/images/background_empty_animated.original.svg
 email: ask@biru.sh
-address: 61 rue de lyon, 75012 Paris, France
-logo: https://tenzu.net/media/images/biru_logo_web_TymRgLg.original.svg
-keywords: ["Gestion de projets", "Développement web", "Développement", "UX-UI", "Collaboration", "Kanban", "Logiciels libres", "Open Source", "Python"] 
-accent_color: "#daedf7"
+description: Nous développons le logiciel de gestion de projet opensource Tenzu
 ---
 Biru est une petite équipe qui développe actuellement le logiciel de gestion de projet [Tenzu](https://tenzu.net/) : 
 
