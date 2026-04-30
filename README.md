@@ -6,7 +6,7 @@ Le site est un effort commun des membres de la Cooptech. N'hésitez pas à soume
 
 ## Poster une nouvelle action
 
-Les articles dans la section actions du site sont des ["posts"](https://jekyllrb.com/docs/posts/) localisés dans le dosier *_posts*. Ils sont formattés avec markdown.
+Les articles dans la section actions du site sont des ["posts"](https://jekyllrb.com/docs/posts/) localisés dans le dossier *_posts*. Ils sont formattés avec markdown.
 
 Pour ajouter un nouvel article:
 
