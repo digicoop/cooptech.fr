@@ -21,7 +21,8 @@ keywords:
   - UX-UI
   - Organisme de formation
   - Symfony
-  - Accessibilité
+  - Accessibilité numérique
+  - Hébergement
 ---
 Magnetic, est une agence web proposant son expertise dans les domaines :
 * Assistance, conseil et suivi de projet (MOA/MOE) ;
