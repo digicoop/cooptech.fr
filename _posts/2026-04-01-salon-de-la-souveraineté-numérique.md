@@ -2,7 +2,7 @@
 layout: post
 category: Actualités
 title: Salon de la souveraineté numérique
-thumbnail: /assets/media/logo-ssn26-paysage.png
+thumbnail: /assets/media/jqxmpr0gccub.png
 ---
 La Cooptech sera présente au Salon de la Souveraineté Numérique, les 30 juin et 1er juillet, à l'Espace Champerret.
 
