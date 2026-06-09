@@ -4,9 +4,7 @@ title: Magnétic
 logo: /assets/members/magnetic/logo.svg
 website: https://www.magnetic.coop
 email: contact@magnetic.coop
-description: Nous sommes une société coopérative spécialisée dans
-  l’accompagnement et le développement de sites web formidables, d’outils
-  métier, d’applications mobile basés sur des technologies open source
+description: Conseil et développement d'outils numériques, hébergement, formation
 keywords:
   - Conseil
   - Agence web
