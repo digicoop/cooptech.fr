@@ -23,15 +23,15 @@ keywords:
   - Hébergement
 ---
 Magnetic, est une agence web proposant son expertise dans les domaines :
-* Assistance, conseil et suivi de projet (MOA/MOE) ;
-* Création graphique (UX/UI Design) ;
-* Hiérarchisation des contenus ;
-* Ergonomie et accessibilité (normalisation W3C) ;
-* Intégration aux standards du web ;
-* Développements à façon et éditeur de progiciels « métiers » ;
-* Définition des plateformes, et gestion de l’hébergement ;
-* Maintenance corrective et évolutive du nouveau portail.
+
+* Assistance, conseil et suivi de projet (MOA/MOE)
+* Création graphique (UX/UI Design)
+* Développement front aux standards du web
+* Développement back, technologies exclusivement Open Source
+* Hébergement haute dispo, haute résilience;
+* Maintenance corrective et évolutive.
+* Accessibilité : Audit RGAA, conseils et accompagnement dans la démarche d'amélioration de l'accessibilité numérique
 
 MAGNETIC, c’est également des compétences en communication numérique : conseiller et accompagner efficacement sur Internet des sociétés, organisations ou collectivités sur les aspects de contenus, d’identité graphique et d’ergonomie.
 
-Magnetic est également agréé centre de formation.
+Magnetic est également agréé centre de formation, certifié Qualiopi
