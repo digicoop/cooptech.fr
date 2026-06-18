@@ -6,7 +6,7 @@ website: https://www.cooperer.coop
 email: info@cooperer.coop
 description: Des services numériques innovants au service des CAE, SCOP et SCIC
 keywords:
-  - Intégration ERP
+  - ERP
 ---
 **Coopérer Pour Entreprendre** est l'éditeur du [logiciel enDI](https://www.endi.coop), un ERP dédié aux CAE et une solution de gestion commerciale compatible avec la facturation électronique.
 
