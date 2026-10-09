@@ -6,7 +6,7 @@ website: https:/bearstech.com
 description: Vos infrastructures critiques méritent mieux qu'un hébergeur.
 email: contact@bearstech.com
 logo: https://bearstech.com/themes/custom/sandbox/logo-bt.svg
-keywords: ["Logiciel Libre", "Open Source", "Infogérance", "DevOps", "Cloud", "Cybersécurité", "Numérique Responsable", "GreenOps", "Infrastructure"]
+keywords: ["Logiciel Libre", "Open Source", "Infogérance", "DevOps", "Cloud", "Cybersécurité", "Numérique Responsable", "GreenOps", "Infrastructure", "Hébergement"]
 
 ---
 
