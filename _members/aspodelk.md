@@ -1,6 +1,6 @@
 ---
 layout: member
-title: ASPODELK
+title: Aspodelk
 logo: /assets/media/aspodelk_txt_white-200x200.png
 website: https://aspodelk.net/
 email: contact@aspodelk.fr
